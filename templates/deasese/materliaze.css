@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+body{
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+
+
+}
+nav{
+    background: #0a0a0a;
+    height: 80px;
+    width: 100%;
+
+
+}
+label.logo{
+    color: rgb(253, 247, 247);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a {
+    color: rgb(255, 254, 253);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+    text-transform: uppercase;
+
+
+}
+a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(37, 41, 241);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+@media(max-width: 952px){
+    .label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+}
+.nav ul li a{
+    font-size: 16px;
+}
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .ul{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: #14a31b;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+
+
+    }
+    .nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .nav ul li a{
+        font-size: 20px;
+    }
+     .a:hover{
+      background: none;
+      color: #0082e6;
+  }
+  #check:checked ~ul{
+      left: 0;
+  }
+}
+section{
+    background: url(img/back.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.slider{
+    margin: 100px auto;
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    color: rgb(12, 12, 11);
+    font-family: 'Josefin Sans', sans-serif;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-size-adjust: 50px;
+    text-align: left;
+    padding: 100px 0;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+
+
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #1a1817;
+    margin-top: 13px;
+    color: rgb(12, 12, 12);
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #141414;
+    border: 2px solid #141414;
+    margin-top: 13px;
+    color: aliceblue;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+/*--call to action----*/
+.cta{
+    color: white;
+    width: auto;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 10px 10px 10px;
+
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* Contact Form */
+
+#contact
+{
+    /*background-color: #0abcf9;*/
+    background-image: linear-gradient(50deg, #0b0c0c 0%, #171320 74%);
+    padding-bottom: 40px;
+    color: white;
+    font-size: 25px;
+    
+}
+#contact h1 span
+{
+    color: white;
+}
+#contact-container
+{
+    /*width: auto;*/
+    display: flex;
+}
+#contact-form-container {
+    width: 50%;
+}
+#contact-form {
+    margin-left: 20%;
+}
+#contact-form input,textarea
+/*input and textarea under contact form*/
+{
+    border: 2px solid rgb(238, 241, 240);
+    max-width:  90%;
+    color: rgb(253, 252, 252);
+    background: transparent;
+    margin: 15px;
+    padding: 4px 10px;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"]
+{
+    background: transparent;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-left: 35%;
+    border: 2px solid rgb(161, 158, 158);
+    color: rgb(233, 231, 232);
+    padding: 0.8em 0.8em 0.78em;
+    font-size: 0.95rem;
+    border-radius: 2px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+}
+#contact-form button:hover {
+    background: white;
+    color: #131414e0;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+#imgcontainer
+{
+    height: 12rem;
+    width: 22rem;
+    /*margin: auto; */
+}
+#imgcontainer img
+{
+    height: 100%;
+    width: 100%;
+    /*margin: auto; */
+}
+
+#my-details-container h3 {
+   /* color: white;*/
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container img {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+#contact .social-icons li a img {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+@media screen and (max-width: 768px)
+{
+    #contact-form-container
+    {
+    width: 80%;
+    margin-left: 10%;
+    }
+    #contact-form
+    {
+    margin-left: 6%;
+    }
+    #contact-container
+    {
+    flex-wrap: wrap;
+    }
+    #my-details-container
+    {
+    width: 80%;
+    margin-left: 16%;
+    }
+    #imgcontainer
+    {
+        width: 15rem;
+        height: 10rem;
+    }
+}
+#contact .social-icons li a img {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+.social-icons li  {
+   
+    margin: 0px 8px 8px 0px;
+    border-radius: 50%;
+
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    /*h-offset 0,v-offset 0,blur 6,spread-4*/
+}
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;
+    
+}

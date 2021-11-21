@@ -1,0 +1,22 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;
+
+}
+.cointainer{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cointainer.p{
+
+max-width: 150px;
+flex: 0 0 150px;
+
+}
+
